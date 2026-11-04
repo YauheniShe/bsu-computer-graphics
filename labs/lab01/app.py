@@ -201,7 +201,7 @@ class ColorApp:
         self.state = ColorState()
         self.palette_job = None
         self.help_window = None
-        root.title("Лаборатория цвета — БГУ · Вариант 13")
+        root.title("Цветовые модели — Лабораторная 1")
         root.configure(bg=BG)
         root.geometry("1140x850")
         root.minsize(1060, 850)
@@ -224,12 +224,12 @@ class ColorApp:
         header.grid(row=0, column=0, sticky="ew", pady=(0, 14))
         heading = tk.Frame(header, bg=BG)
         heading.pack(side="left")
-        tk.Label(heading, text="БГУ  /  КОМПЬЮТЕРНАЯ ГРАФИКА", bg=BG, fg=MUTED,
+        tk.Label(heading, text="Компьютерная графика · БГУ", bg=BG, fg=MUTED,
                  font=(FONT, 10), anchor="w").pack(fill="x")
-        tk.Label(heading, text="Лаборатория цвета", bg=BG, fg=INK,
+        tk.Label(heading, text="Цветовые модели", bg=BG, fg=INK,
                  font=(FONT, 27, "bold"), anchor="w").pack(fill="x", pady=(4, 0))
-        ttk.Button(header, text="Как это работает", command=self.show_help).pack(side="right", padx=(14, 0))
-        tk.Label(header, text="ЛАБА 01\nВариант 13 · CMYK / RGB / HLS", bg=BG, fg=MUTED,
+        ttk.Button(header, text="Справка", command=self.show_help).pack(side="right", padx=(14, 0))
+        tk.Label(header, text="Лабораторная 1\nВариант 13 · CMYK / RGB / HLS", bg=BG, fg=MUTED,
                  justify="right", font=(FONT, 10)).pack(side="right")
 
         preview = tk.Frame(outer, bg=PAPER, highlightbackground=LINE, highlightthickness=1)
@@ -238,7 +238,7 @@ class ColorApp:
         self.swatch.pack(side="left", padx=10, pady=10)
         self.swatch_caption = self.swatch.create_text(20, 25, text="ТЕКУЩИЙ ЦВЕТ", anchor="w", font=(FONT, 10))
         self.swatch_hex = self.swatch.create_text(20, 64, text="", anchor="w", font=(MONO, 27, "bold"))
-        self.swatch_note = self.swatch.create_text(20, 94, text="Один цвет · три представления", anchor="w", font=(FONT, 10))
+        self.swatch_note = self.swatch.create_text(20, 94, text="CMYK · RGB · HLS", anchor="w", font=(FONT, 10))
         tools = tk.Frame(preview, bg=PAPER)
         tools.pack(side="left", fill="both", expand=True, padx=18, pady=14)
         upper = tk.Frame(tools, bg=PAPER)
@@ -286,7 +286,6 @@ class ColorApp:
         footer.grid(row=3, column=0, sticky="ew", pady=(12, 0))
         self.status_label = tk.Label(footer, bg=BG, fg=MUTED, anchor="w", font=(FONT, 10))
         self.status_label.pack(side="left", fill="x", expand=True)
-        tk.Label(footer, text="PYTHON + TKINTER", bg=BG, fg=MUTED, font=(MONO, 9)).pack(side="right")
         self.refresh()
         root.protocol("WM_DELETE_WINDOW", self.close)
 
@@ -340,10 +339,10 @@ class ColorApp:
             return
         window = tk.Toplevel(self.root)
         self.help_window = window
-        window.title("Как устроена лаборатория цвета")
+        window.title("Справка")
         window.geometry("680x580")
         window.configure(bg=PAPER)
-        tk.Label(window, text="Один цвет, три языка", font=(FONT, 23, "bold"),
+        tk.Label(window, text="Цветовые модели", font=(FONT, 23, "bold"),
                  bg=PAPER, fg=INK).pack(anchor="w", padx=26, pady=(24, 12))
         text = tk.Text(window, wrap="word", relief="flat", bg=PAPER, fg=INK,
                        font=(FONT, 13), padx=26, pady=10, spacing3=12)
