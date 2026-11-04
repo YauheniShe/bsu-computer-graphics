@@ -1,5 +1,5 @@
 #!/bin/zsh
-cd -- "${0:A:h}/labs/lab01" || exit 1
+cd -- "${0:A:h}" || exit 1
 
 for lab_python in /opt/homebrew/bin/python3 /usr/local/bin/python3 python3; do
     if "$lab_python" -c 'import sys, tkinter; sys.exit(sys.version_info < (3, 10))' >/dev/null 2>&1; then
