@@ -23,3 +23,11 @@ Thumbs.db
 .env
 .env.*
 !.env.example
+
+# LaTeX: в репозитории остаются исходники и готовые PDF.
+labs/*/report/*.aux
+labs/*/report/*.log
+labs/*/report/*.out
+labs/*/report/*.toc
+labs/*/report/*.xdv
+labs/*/report/*.synctex.gz

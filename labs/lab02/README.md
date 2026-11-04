@@ -2,7 +2,7 @@
 
 Вариант 13: локальная пороговая обработка и высокочастотные фильтры для повышения резкости.
 
-[Условие](assignment.pdf) · [Формулы и пояснения](THEORY.md) · [Сравнение методов на примерах](samples/RESULTS.md)
+[Условие](assignment.pdf) · [Отчёт PDF](report/report.pdf) · [Формулы и пояснения](THEORY.md) · [Сравнение методов на примерах](samples/RESULTS.md)
 
 ## Запуск
 
@@ -55,3 +55,17 @@ python3 -m venv .venv
 ```
 
 Вторая команда открывает тестовое окно. Для повторного создания набора изображений выполни `.venv/bin/python make_samples.py`.
+
+## Отчёт
+
+[PDF](report/report.pdf) и [исходник LaTeX](report/report.tex) находятся в `report/`.
+Чтобы пересобрать PDF, установи Tectonic, шрифты Times New Roman (или Liberation Serif) и DejaVu Sans Mono. Из папки лабораторной:
+
+```bash
+cd report
+tectonic report.tex
+```
+
+При первой сборке Tectonic скачивает пакеты TeX. Для просмотра готового PDF ничего устанавливать не нужно.
+
+Рисунки и таблицы можно пересоздать из папки лабораторной командой `.venv/bin/python report/make_figures.py`, затем снова собрать PDF. На Windows — `.venv\Scripts\python.exe report/make_figures.py`.

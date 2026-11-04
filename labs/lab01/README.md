@@ -2,7 +2,7 @@
 
 Вариант 13: **CMYK, RGB, HLS**. Python + Tkinter.
 
-[Условие](assignment.pdf) · [Формулы](THEORY.md)
+[Условие](assignment.pdf) · [Отчёт PDF](report/report.pdf) · [Формулы](THEORY.md)
 
 ## Запуск
 
@@ -46,3 +46,15 @@ python3 -m unittest discover -s tests -p 'gui_checks.py' -v
 ```
 
 Вторая команда открывает тестовое окно и требует графического сеанса.
+
+## Отчёт
+
+[PDF](report/report.pdf) и [исходник LaTeX](report/report.tex) находятся в `report/`.
+Чтобы пересобрать PDF, установи Tectonic, шрифты Times New Roman (или Liberation Serif) и DejaVu Sans Mono. Из папки лабораторной:
+
+```bash
+cd report
+tectonic report.tex
+```
+
+При первой сборке Tectonic скачивает пакеты TeX. Для просмотра готового PDF ничего устанавливать не нужно.
