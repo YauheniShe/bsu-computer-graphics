@@ -6,10 +6,11 @@
 |---|---|---|
 | [1](labs/lab01/) | Цветовые модели CMYK, RGB, HLS | [PDF](labs/lab01/report/report.pdf) |
 | [2](labs/lab02/) | Локальные пороги и повышение резкости | [PDF](labs/lab02/report/report.pdf) |
+| [3](labs/lab03/) | Базовые растровые алгоритмы | [PDF](labs/lab03/report/report.pdf) |
 
 ## Запуск
 
-Открой папку нужной работы (`labs/lab01` или `labs/lab02`) и дважды щёлкни:
+Открой папку нужной работы в `labs/` и дважды щёлкни:
 
 - **macOS:** `Запустить лабораторную.command`;
 - **Windows:** `Запустить лабораторную.bat`.

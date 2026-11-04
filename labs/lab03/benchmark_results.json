@@ -1,0 +1,178 @@
+{
+  "measured_at": "2026-11-04T17:05:36+00:00",
+  "python": "3.14.6",
+  "system": "Darwin",
+  "machine": "arm64",
+  "cpu": "Apple M3 Pro",
+  "clock": "perf_counter_ns",
+  "loops": 40,
+  "repeats": 5,
+  "description": "Генерация списка Pixel без trace и GUI; GC отключён внутри замеров.",
+  "rows": [
+    {
+      "algorithm": "Пошаговый",
+      "kind": "length",
+      "size": 100,
+      "calls_per_repeat": 320,
+      "pixels_per_call": 101,
+      "median_us": 28.2653625,
+      "min_us": 28.204428125,
+      "max_us": 28.398046875,
+      "ns_per_pixel": 279.8550742574257
+    },
+    {
+      "algorithm": "Пошаговый",
+      "kind": "length",
+      "size": 500,
+      "calls_per_repeat": 320,
+      "pixels_per_call": 501,
+      "median_us": 137.64869687499998,
+      "min_us": 137.17942812500002,
+      "max_us": 138.80637812499998,
+      "ns_per_pixel": 274.7478979540918
+    },
+    {
+      "algorithm": "Пошаговый",
+      "kind": "length",
+      "size": 1000,
+      "calls_per_repeat": 320,
+      "pixels_per_call": 1001,
+      "median_us": 273.21458437499996,
+      "min_us": 272.75481874999997,
+      "max_us": 273.46705625000004,
+      "ns_per_pixel": 272.9416427322677
+    },
+    {
+      "algorithm": "ЦДА",
+      "kind": "length",
+      "size": 100,
+      "calls_per_repeat": 320,
+      "pixels_per_call": 101,
+      "median_us": 23.53125,
+      "min_us": 23.438931250000003,
+      "max_us": 23.604815625,
+      "ns_per_pixel": 232.98267326732673
+    },
+    {
+      "algorithm": "ЦДА",
+      "kind": "length",
+      "size": 500,
+      "calls_per_repeat": 320,
+      "pixels_per_call": 501,
+      "median_us": 119.713671875,
+      "min_us": 116.75169062500001,
+      "max_us": 119.99400937499999,
+      "ns_per_pixel": 238.94944486027944
+    },
+    {
+      "algorithm": "ЦДА",
+      "kind": "length",
+      "size": 1000,
+      "calls_per_repeat": 320,
+      "pixels_per_call": 1001,
+      "median_us": 235.8834625,
+      "min_us": 234.6102875,
+      "max_us": 240.89166875,
+      "ns_per_pixel": 235.64781468531467
+    },
+    {
+      "algorithm": "Брезенхем — отрезок",
+      "kind": "length",
+      "size": 100,
+      "calls_per_repeat": 320,
+      "pixels_per_call": 101,
+      "median_us": 18.8709625,
+      "min_us": 18.826953125,
+      "max_us": 18.9931,
+      "ns_per_pixel": 186.84121287128715
+    },
+    {
+      "algorithm": "Брезенхем — отрезок",
+      "kind": "length",
+      "size": 500,
+      "calls_per_repeat": 320,
+      "pixels_per_call": 501,
+      "median_us": 96.27513125,
+      "min_us": 96.212890625,
+      "max_us": 96.573046875,
+      "ns_per_pixel": 192.16593063872256
+    },
+    {
+      "algorithm": "Брезенхем — отрезок",
+      "kind": "length",
+      "size": 1000,
+      "calls_per_repeat": 320,
+      "pixels_per_call": 1001,
+      "median_us": 193.06028750000002,
+      "min_us": 192.921225,
+      "max_us": 193.930990625,
+      "ns_per_pixel": 192.8674200799201
+    },
+    {
+      "algorithm": "Брезенхем — окружность",
+      "kind": "radius",
+      "size": 40,
+      "calls_per_repeat": 40,
+      "pixels_per_call": 228,
+      "median_us": 52.507275,
+      "min_us": 52.1,
+      "max_us": 54.622925,
+      "ns_per_pixel": 230.29506578947368
+    },
+    {
+      "algorithm": "Брезенхем — окружность",
+      "kind": "radius",
+      "size": 200,
+      "calls_per_repeat": 40,
+      "pixels_per_call": 1132,
+      "median_us": 261.059375,
+      "min_us": 255.2604,
+      "max_us": 272.45207500000004,
+      "ns_per_pixel": 230.61782243816253
+    },
+    {
+      "algorithm": "Брезенхем — окружность",
+      "kind": "radius",
+      "size": 400,
+      "calls_per_repeat": 40,
+      "pixels_per_call": 2264,
+      "median_us": 542.9229250000001,
+      "min_us": 538.9448000000001,
+      "max_us": 557.0698000000001,
+      "ns_per_pixel": 239.80694567137812
+    },
+    {
+      "algorithm": "Ву — сглаживание",
+      "kind": "length",
+      "size": 100,
+      "calls_per_repeat": 320,
+      "pixels_per_call": 181,
+      "median_us": 51.05013125,
+      "min_us": 50.978515625,
+      "max_us": 53.394921875,
+      "ns_per_pixel": 282.0449240331492
+    },
+    {
+      "algorithm": "Ву — сглаживание",
+      "kind": "length",
+      "size": 500,
+      "calls_per_repeat": 320,
+      "pixels_per_call": 901,
+      "median_us": 249.386328125,
+      "min_us": 248.290103125,
+      "max_us": 251.208853125,
+      "ns_per_pixel": 276.7883774972253
+    },
+    {
+      "algorithm": "Ву — сглаживание",
+      "kind": "length",
+      "size": 1000,
+      "calls_per_repeat": 320,
+      "pixels_per_call": 1801,
+      "median_us": 501.3966125,
+      "min_us": 500.784375,
+      "max_us": 505.89140625,
+      "ns_per_pixel": 278.39900749583563
+    }
+  ]
+}
