@@ -7,6 +7,9 @@
 | [1](labs/lab01/) | Цветовые модели CMYK, RGB, HLS | [PDF](labs/lab01/report/report.pdf) |
 | [2](labs/lab02/) | Локальные пороги и повышение резкости | [PDF](labs/lab02/report/report.pdf) |
 | [3](labs/lab03/) | Базовые растровые алгоритмы | [PDF](labs/lab03/report/report.pdf) |
+| [4](labs/lab04/) | Алгоритмы отсечения отрезков и многоугольников | [PDF](labs/lab04/report/report.pdf) |
+
+[Конспект для защиты лабораторных 3 и 4 (PDF)](labs/defense/labs-03-04.pdf)
 
 ## Запуск
 
